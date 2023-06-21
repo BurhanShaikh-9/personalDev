@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <!-- remixIcon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Jquery Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick Carousel Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- jquery Choosen Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="headerMain">
+                <div class="headerLogo">Logo</div>
+                <nav class="menusHeader">
+                    <div class="SignInButton">Sign In</div>
+                    <div class="themeButton SignUpButton">Sign Up</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <section class="mainSection formSection1">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Dream it. Build it. Inspire.</h1>
+                    <p>Building a legacy of inspiration through visionary creations</p>
+                </div>
+
+                <div class="mainForm">
+                    <div class="formPart1 allForms">
+                        <div class="formFields">
+                            <i class=" formIcon ri-user-3-line"></i>
+                            <div class="formFieldsInner form-floating mb-3 ">
+                                <input type="text" class="form-control userInputName" id="floatingInput" placeholder="">
+                                <label for="floatingInput">Name</label>
+                            </div>
+                        </div>
+                        <div class="formFields">
+                            <i class=" formIcon ri-smartphone-line"></i>
+                            <div class="formFieldsInner form-floating mb-3">
+                                <input type="number" class="form-control userInputNumber" id="floatingInput"
+                                    placeholder="">
+                                <label for="floatingInput">Phone No.</label>
+                            </div>
+                        </div>
+                        <div class="formFields">
+                            <i class="formIcon ri-mail-line"></i>
+                            <div class="formFieldsInner form-floating mb-3">
+                                <input type="email" class="form-control userInputEmail" id="floatingInput"
+                                    placeholder="">
+                                <label for="floatingInput">Email Id</label>
+                            </div>
+                        </div>
+                        <div class="formFields">
+                            <p class="buttonDisabledProp">Enter proper Fields</p>
+                            <div class="ContinueButtonOuter">
+                                <button class="formContinueButton themeButton formPart1Button" disabled>
+                                    Continue
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="paginationMain">
+                            <span class="active paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mainSection formSection2" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Grow with Impactful Services</h1>
+                    <p>Customized solutions designed to unleash your full potential</p>
+                </div>
+
+                <div class="mainForm">
+
+                    <div class="formPart2 allForms">
+                        <div class="formFields">
+                            <div class="firstRowRadio">
+                                <div class="radioButton radioBtn1">
+                                    <input type="radio" id="docu1" name="creationType" checked>
+                                    <label for="docu1"><img src="assets/images/document1.svg" alt=""></label>
+                                    <div class="check">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                    <p class="creationTypeTitle">Digital Resume</p>
+                                </div>
+                                <div class="radioButton radioBtn2">
+                                    <input type="radio" id="docu2" name="creationType">
+                                    <label for="docu2"> <img src="assets/images/document2.svg" alt=""></label>
+                                    <div class="check">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                    <p class="creationTypeTitle">Web Portfolio</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formFields">
+                            <div class="ContinueButtonOuter">
+                                <button class="formContinueButton themeButton formPart2Button">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="paginationMain">
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mainSection formSection3" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Bring Your Vision to Life</h1>
+                    <p>Effortlessly customize and personalize templates to suit your style</p>
+                </div>
+            </div>
+
+            <div class="mainForm">
+
+                <div class="formPart3 allForms">
+
+                    <div class="formFields carouselField low-opacity">
+                        <div class="wrapperSelectionCarousel">
+                            <div class="carouselImage">
+                                <input type="radio" name="selectionMenu" id="selectWeb1">
+                                <label for="selectWeb1">
+                                    <div class="carouselImgOuter">
+                                        <img id="" src="assets/images/image7.jpg" alt="">
+                                    </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div class="carouselImage">
+                                <input type="radio" name="selectionMenu" id="selectWeb2">
+                                <label for="selectWeb2">
+                                    <div class="carouselImgOuter">
+                                        <img id="" src="assets/images/image7.jpg" alt="">
+                                    </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div class="carouselImage">
+                                <input type="radio" name="selectionMenu" id="selectWeb3">
+                                <label for="selectWeb3">
+                                    <div class="carouselImgOuter">
+                                        <img id="" src="assets/images/image7.jpg" alt="">
+                                    </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div class="carouselImage">
+                                <input type="radio" name="selectionMenu" id="selectWeb4">
+                                <label for="selectWeb4">
+                                    <div class="carouselImgOuter">
+                                        <img id="" src="assets/images/image7.jpg" alt="">
+                                    </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div class="carouselImage">
+                                <input type="radio" name="selectionMenu" id="selectWeb5">
+                                <label for="selectWeb5">
+                                    <div class="carouselImgOuter">
+                                        <img id="" src="assets/images/image7.jpg" alt="">
+                                    </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                </label>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="formPart3Pagination allForms">
+
+                    <div class="formFields">
+                        <div class="ContinueButtonOuter">
+                            <button class="formContinueButton themeButton formPart3Button">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="paginationMain">
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="mainSection formSection4" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Express Your Style</h1>
+                    <p>Discover Your Perfect Color Combination for Brand & Style</p>
+                </div>
+            </div>
+
+            <div class="mainForm">
+                <div class="container">
+
+                    <div class="formPart3 allForms">
+                        <div class="formFields ">
+
+                            <div class="colorPlatletes">
+
+                                <div class="radioButtonPlatelets">
+                                    <input type="radio" name="platletes" id="colorplates1" checked>
+                                    <label class="colorplatesLabel" for="colorplates1">
+                                        <img class="colorPlateImg" src="assets/images/plateletBlue.png" alt="">
+                                        <P class="plateletContent">Blue</P>
+                                        <img class="checkButtons" src="assets/images/check.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="radioButtonPlatelets">
+                                    <input type="radio" name="platletes" id="colorplates2">
+                                    <label class="colorplatesLabel" for="colorplates2">
+                                        <img class="colorPlateImg" src="assets/images/plateletPurple.png" alt="">
+                                        <P class="plateletContent">Purple</P>
+                                        <img class="checkButtons" src="assets/images/check.png" alt="">
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="colorPlatletes">
+
+                                <div class="radioButtonPlatelets">
+                                    <input type="radio" name="platletes" id="colorplates3">
+                                    <label class="colorplatesLabel" for="colorplates3">
+                                        <img class="colorPlateImg" src="assets/images/plateletPink.png" alt="">
+                                        <P class="plateletContent">Pink</P>
+                                        <img class="checkButtons" src="assets/images/check.png" alt="">
+                                    </label>
+                                </div>
+                                <div class="radioButtonPlatelets">
+                                    <input type="radio" name="platletes" id="colorplates4">
+                                    <label class="colorplatesLabel" for="colorplates4">
+                                        <img class="colorPlateImg" src="assets/images/plateletOrange.png" alt="">
+                                        <P class="plateletContent">Orange</P>
+                                        <img class="checkButtons" src="assets/images/check.png" alt="">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formPart3Pagination allForms">
+
+                    <div class="formFields">
+                        <div class="ContinueButtonOuter">
+                            <button class="formContinueButton themeButton formPart4Button">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="paginationMain">
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="mainSection formSection5" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Express Your Style</h1>
+                    <p>Discover Your Perfect Color Combination for Brand & Style</p>
+                </div>
+            </div>
+
+            <div class="mainForm">
+                <div class="container">
+
+                    <div class="formPart3 allForms">
+                        <div class="formFields ">
+                            <div class="allFontsSelector">
+
+                                <div class="fontButtonSelector">
+                                    <input type="radio" name="fontInputChange" id="fontSelectedId1" checked>
+                                    <label for="fontSelectedId1" class="Poppins">Poppins</label>
+                                    <img class="fontCheck" src="assets/images/check.png" alt="">
+                                </div>
+                                <div class="fontButtonSelector">
+                                    <input type="radio" name="fontInputChange" id="fontSelectedId2">
+                                    <label for="fontSelectedId2" class="Montserrat">Montserrat</label>
+                                    <img class="fontCheck" src="assets/images/check.png" alt="">
+                                </div>
+                                <div class="fontButtonSelector">
+                                    <input type="radio" name="fontInputChange" id="fontSelectedId3">
+                                    <label for="fontSelectedId3" class="Arial">Arial</label>
+                                    <img class="fontCheck" src="assets/images/check.png" alt="">
+                                </div>
+                                <div class="fontButtonSelector">
+                                    <input type="radio" name="fontInputChange" id="fontSelectedId4">
+                                    <label for="fontSelectedId4" class="Inter">Inter</label>
+                                    <img class="fontCheck" src="assets/images/check.png" alt="">
+                                </div>
+                                <div class="fontButtonSearcher">
+                                    <i class="ri-search-2-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formFields ">
+                            <div class="allSelectedFonts">
+
+                                <div class="selectedFont fontWeightBold">
+                                    <p>
+                                        The quick brown fox jumps over the lazy dog
+                                    </p>
+                                </div>
+                                <div class="selectedFont fontWeightSemiBold">
+                                    <p>
+                                        The quick brown fox jumps over the lazy dog
+                                    </p>
+                                </div>
+                                <div class="selectedFont fontWeightRegular">
+                                    <p>
+                                        The quick brown fox jumps over the lazy dog
+                                    </p>
+                                </div>
+                                <div class="selectedFont fontWeightLight">
+                                    <p>
+                                        The quick brown fox jumps over the lazy dog
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formPart3Pagination allForms">
+
+                    <div class="formFields">
+                        <div class="ContinueButtonOuter">
+                            <button class="formContinueButton screen6Continue themeButton formPart5Button">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="paginationMain">
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="active paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                        <span class="paginationInner"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="mainSection formSection6" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Carving Your Path</h1>
+                    <p>Understanding Your Entrepreneurial Spirit/Discovering the Advantages of a Job</p>
+                </div>
+
+                <div class="mainForm">
+
+                    <div class="formPart2 allForms">
+                        <div class="formFields">
+                            <div class="firstRowRadio">
+                                <div class="radioButton radioBtn1">
+                                    <input type="radio" id="jobTypeId1" name="creationType" checked>
+                                    <label for="jobTypeId1"><img src="assets/images/job1.svg" alt=""></label>
+                                    <div class="check">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                    <p class="creationTypeTitle">Business</p>
+                                </div>
+                                <div class="radioButton radioBtn2">
+                                    <input type="radio" id="jobTypeId2" name="creationType">
+                                    <label for="jobTypeId2"> <img src="assets/images/job2.svg" alt=""></label>
+                                    <div class="check">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
+                                    <p class="creationTypeTitle">Job</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formFields">
+                            <div class="ContinueButtonOuter">
+                                <button class="formContinueButton themeButton formPart6Button">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="paginationMain">
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="paginationInner"></span>
+                            <span class="paginationInner"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mainSection formSection7" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Your Story Matters</h1>
+                    <p> Engage Us with Your Passion and Work Story</p>
+                </div>
+
+                <div class="mainForm">
+
+                    <div class="formPart2 allForms">
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-building-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Industry</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-compass-3-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Skill Set</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-file-text-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Years of Experience</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-tools-fill"></i>
+                            <select id="mySelect" class="form-select" aria-label="Default select example">
+                                <option selected value="">Tools</option>
+                                <option value="Adobe">Adobe</option>
+                                <option value="Figma">Figma</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div id="selectedItems"></div>
+
+                        <div class="formFields">
+                            <div class="ContinueButtonOuter">
+                                <button class="formContinueButton themeButton  formButtondiv formPart7Button">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="paginationMain">
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="paginationInner"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mainSection formSection8" style="display: none;">
+            <div class="container">
+
+                <div class="mainHeading">
+                    <h1>Fueling the Drive</h1>
+                    <p> Embrace the Excitement of Being Almost There</p>
+                </div>
+
+                <div class="mainForm">
+
+                    <div class="formPart2 allForms">
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-earth-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Language</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-compass-3-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Country</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-anchor-fill"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>State</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="formFields formSelectField">
+                            <i class="formSelectIcon ri-treasure-map-line"></i>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>City</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div id="selectedItems"></div>
+
+                        <div class="formFields">
+                            <div class="ContinueButtonOuter">
+                                <button class="formContinueButton themeButton  formButtonLast" onclick="goToMain()">
+                                    Finalize
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="formFields">
+                            <div class="skipButton">
+                                <p>Skip</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19.1643 12.0001L12.9572 5.79297L11.543 7.20718L16.3359 12.0001L11.543 16.793L12.9572 18.2072L19.1643 12.0001ZM13.5144 12.0001L7.30728 5.79297L5.89307 7.20718L10.686 12.0001L5.89307 16.793L7.30728 18.2072L13.5144 12.0001Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="paginationMain">
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                            <span class="active paginationInner"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="container">
+
+            <div class="footerMain">
+                <a href="">
+                    <img class="chatImage" src="assets/images/chatIcon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Form switching  -->
+    <script>
+
+        $(document).ready(function () {
+
+            $('.formPart1Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'block');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart2Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'block');
+                $('.wrapperSelectionCarousel').slick('resize');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart3Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'block');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart4Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'block');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart5Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'block');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart6Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'block');
+                $('.formSection8').css('display', 'none');
+            });
+
+            $('.formPart7Button').click(function () {
+                $('.formSection1').css('display', 'none');
+                $('.formSection2').css('display', 'none');
+                $('.formSection3').css('display', 'none');
+                $('.formSection4').css('display', 'none');
+                $('.formSection5').css('display', 'none');
+                $('.formSection6').css('display', 'none');
+                $('.formSection7').css('display', 'none');
+                $('.formSection8').css('display', 'block');
+            });
+
+
+        });
+    </script>
+
+    <!-- carousel script  -->
+    <script>
+        $('.wrapperSelectionCarousel').slick({
+
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 568,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        // $('.selectionCarousel').slick('unslick');
+
+
+
+        $('.carouselReview').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: true,
+        });
+    </script>
+
+    <!-- select text Input Box -->
+    <script>
+        const select = document.getElementById('mySelect');
+        const selectedItemsContainer = document.getElementById('selectedItems');
+        const selectedItems = [];
+
+        select.addEventListener('change', () => {
+            const selectedItem = select.value;
+
+            // Check if the selected item is not empty
+            if (selectedItem && !selectedItems.includes(selectedItem)) {
+                selectedItems.push(selectedItem);
+
+                const selectedItemDiv = document.createElement('div');
+                selectedItemDiv.className = 'selectedItem';
+                selectedItemDiv.innerHTML = selectedItem;
+
+                const removeButton = document.createElement('span');
+                removeButton.innerHTML = 'x';
+                removeButton.addEventListener('click', () => {
+                    const index = selectedItems.indexOf(selectedItem);
+                    if (index > -1) {
+                        selectedItems.splice(index, 1);
+                        selectedItemDiv.remove();
+
+                        // Update the select options if needed
+                        const options = Array.from(select.options);
+                        options.forEach(option => {
+                            if (option.value === selectedItem) {
+                                option.selected = false;
+                            }
+                        });
+                    }
+                });
+
+                selectedItemDiv.appendChild(removeButton);
+                selectedItemsContainer.appendChild(selectedItemDiv);
+            }
+        });
+    </script>
+
+    <!-- href script  -->
+    <script>
+        function goToMain() {
+            window.location.href = "main.html";
+        }
+    </script>
+
+
+
+
+    <!-- Form Validation -->
+    <script>
+
+        // form step First Validation
+
+        const userName = $('.userInputName');
+        const userEmail = $('.userInputEmail');
+        const userNumber = $('.userInputNumber');
+        const nextButton = $('.formPart1Button');
+        const warningShow = $('.buttonDisabledProp');
+        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        const phoneRegex = /^[-+]?\d{10,}$/;
+        // const phoneRegex = /^\d{9}$/;
+        const firstFormValidation = () => {
+            const nameValue = userName.val();
+            const emailValue = userEmail.val();
+            const numberValue = userNumber.val();
+            const isNameValid = nameValue.trim() !== '';
+            const isEmailValid = emailRegex.test(emailValue);
+            const isNumberValid = phoneRegex.test(numberValue);
+            if (isNameValid && isEmailValid && isNumberValid) {
+                nextButton.prop('disabled', false);
+                warningShow.hide();
+                nextButton.css("background-color", "#4337FF");
+            } else {
+                nextButton.prop('disabled', true);
+                nextButton.css("background-color", "grey");
+                warningShow.show();
+            }
+        };
+        userName.on('input', firstFormValidation);
+        userEmail.on('input', firstFormValidation);
+        userNumber.on('input', firstFormValidation);
+
+
+        // form Step two validation 
+
+    </script>
+
+
+
+</body>
+
+</html>

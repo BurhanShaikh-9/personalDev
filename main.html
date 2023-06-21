@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+    <!-- remixIcon CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Jquery Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <header class="headerTemplateEditor">
+
+        <div class="headerMain">
+            <nav class="leftSection desktopHeader">
+                <div class="innerSectionHeader selectLayerSection"><i class="ri-stack-line"></i></div>
+                <div class="innerSectionHeader selectMediaSection"><i class="ri-upload-cloud-2-line"></i></div>
+                <div class="innerSectionHeader selectFontSection"> <i class="ri-text-spacing"></i></div>
+                <div class="innerSectionHeader selectImageSection"> <i class="ri-landscape-line"></i></div>
+                <div class="innerSectionHeader selectColorSection"> <i class="ri-contrast-drop-fill"></i></div>
+                <div class="innerSectionHeader selectAddonSection"><i class="ri-command-line"></i></div>
+                <div class="sepratorSectionHeader">
+                    <div class="seprator"></div>
+                </div>
+                <div class="innerSectionHeader"><i class="ri-arrow-go-back-fill"></i></div>
+                <div class="innerSectionHeader"><i class="ri-arrow-go-forward-fill"></i></div>
+            </nav>
+
+            <nav class="navbar bg-body-tertiary mobileHeader">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item selectLayerSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-stack-line"></i>
+                                        <p>Layer</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item selectMediaSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-upload-cloud-2-line"></i>
+                                        <p>Upload Media</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item selectFontSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-text-spacing"></i>
+                                        <p>Text</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item selectImageSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-landscape-line"></i>
+                                        <p>Images</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item selectColorSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-contrast-drop-fill"></i>
+                                        <p>Colors</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item selectAddonSection">
+                                    <a class="nav-link" data-bs-dismiss="offcanvas" aria-current="page" href="#"><i
+                                            class="ri-command-line"></i>
+                                        <p>Add-Ons</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="rightSection">
+                <div class="innerSectionRight"> <i class="ri-play-line"></i></div>
+                <div class="innerSectionRight"> <button class="shareButton themeButton">Share <i
+                            class="ri-share-line"></i></button> </div>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="mainBody">
+            <div id="mainBodyLeftId" class="mainBodyInnerLeft">
+                <div class="leftBodyInner">
+
+                    <div class="leftMenu leftMenuAll ImageSelectMenu" style="display: none;">
+
+                        <div class="imageSelectMenuInner">
+
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="leftMenuAll  layerSelectMenu">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Navbar Section
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordionBody">
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Header Section
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordionBody">
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Navbar Section
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordionBody">
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordionInner">
+                                            <div class="leftAccordion">
+                                                <i class="ri-text-spacing"></i>
+                                                <p>Text 1</p>
+                                            </div>
+                                            <div class="rightAccordion">
+                                                <i class="ri-pencil-line"></i>
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leftMenuFonts leftMenuAll fontSelectMenu" style="display: none;">
+                        <div class="leftMenuSearch">
+                            <input class="form-control" type="text" placeholder="Search Fonts"
+                                aria-label="default input example">
+                            <i class="ri-search-2-line"></i>
+                        </div>
+
+                        <div class="leftMenuFontsInner">
+                            <div class="leftMenuRadio">
+                                <input type="radio" name="fontsName" id="Montserrat">
+                                <label for="Montserrat">
+                                    <p>Font Name</p>
+                                    <p>
+                                        <i class="checkIcon ri-check-line"></i>
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="leftMenuRadio">
+                                <input type="radio" name="fontsName" id="Montserrat1">
+                                <label for="Montserrat1">
+                                    <p>Font Name</p>
+                                    <p>
+                                        <i class="checkIcon ri-check-line"></i>
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="leftMenuRadio">
+                                <input type="radio" name="fontsName" id="Montserrat2">
+                                <label for="Montserrat2">
+                                    <p>Font Name</p>
+                                    <p>
+                                        <i class="checkIcon ri-check-line"></i>
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leftMenuPlates leftMenuAll colorSelectMenu" style="display: none;">
+                        <div class="colorPlatesInner">
+
+
+                            <div class="leftMenuSearch">
+                                <p>Document Color Palettes</p>
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/image5.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/image6.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <p>Chose Your Favorite Color Palettes</p>
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 61.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 62.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 63.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 64.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 65.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 66.png" alt="">
+                            </div>
+                            <div class="leftMenuSearch">
+                                <img src="assets/images/Group 67.png" alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="leftMenuButtons leftMenuAll buttonSelectMenu" style="display: none;">
+                        <div class="buttonSelectInner">
+
+                            <div class="leftMenuInnerButtons">
+                                <button class="squareButton">Download Resume</button>
+                            </div>
+                            <div class="leftMenuInnerButtons">
+                                <button class="halfRoundButton">Download Resume</button>
+                            </div>
+                            <div class="leftMenuInnerButtons">
+                                <button class="roundButton">Download Resume</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leftPanemCloseButton">
+                        <button>x</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="leftPanelButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <button>
+                    <p> Menu </p> <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+            <div class="mainBodyInnerRight">
+                <div class="rightMenu">
+                    <div class="rightMenuInner">
+                        <img src="assets/images/image4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+
+        $(document).ready(function () {
+            $('.leftPanelButton').click(function () {
+                $('#mainBodyLeftId').addClass('mainBodyleftDisplay');
+            });
+
+            $('.leftPanemCloseButton').click(function () {
+                $('#mainBodyLeftId').removeClass('mainBodyleftDisplay');
+            });
+
+
+
+            $('.selectLayerSection').click(function () {
+                $('.layerSelectMenu').css('display', 'block');
+                $('.fontSelectMenu').css('display', 'none');
+                $('.ImageSelectMenu').css('display', 'none');
+                $('.colorSelectMenu').css('display', 'none');
+                $('.buttonSelectMenu').css('display', 'none');
+            });
+            // $('.selectMediaSection').click(function () {
+            //     $('.layerSelectMenu').css('display', 'none');
+            //     $('.fontSelectMenu').css('display', 'none');
+            //     $('.ImageSelectMenu').css('display', 'none');
+            //     $('.colorSelectMenu').css('display', 'none');
+            //     $('.buttonSelectMenu').css('display', 'none');
+            // });
+            $('.selectFontSection').click(function () {
+                $('.layerSelectMenu').css('display', 'none');
+                $('.fontSelectMenu').css('display', 'flex');
+                $('.ImageSelectMenu').css('display', 'none');
+                $('.colorSelectMenu').css('display', 'none');
+                $('.buttonSelectMenu').css('display', 'none');
+            });
+            $('.selectImageSection').click(function () {
+                $('.layerSelectMenu').css('display', 'none');
+                $('.fontSelectMenu').css('display', 'none');
+                $('.ImageSelectMenu').css('display', 'flex');
+                $('.colorSelectMenu').css('display', 'none');
+                $('.buttonSelectMenu').css('display', 'none');
+            });
+            $('.selectColorSection').click(function () {
+                $('.layerSelectMenu').css('display', 'none');
+                $('.fontSelectMenu').css('display', 'none');
+                $('.ImageSelectMenu').css('display', 'none');
+                $('.colorSelectMenu').css('display', 'flex');
+                $('.buttonSelectMenu').css('display', 'none');
+            });
+            $('.selectAddonSection').click(function () {
+                $('.layerSelectMenu').css('display', 'none');
+                $('.fontSelectMenu').css('display', 'none');
+                $('.ImageSelectMenu').css('display', 'none');
+                $('.colorSelectMenu').css('display', 'none');
+                $('.buttonSelectMenu').css('display', 'flex');
+            });
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
