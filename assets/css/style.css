@@ -63,8 +63,9 @@ header {
     font-size: 25px;
     font-family: 'productSansBold';
 }
-.headerLogo a{
-    text-decoration: none!important;
+
+.headerLogo a {
+    text-decoration: none !important;
 }
 
 .nav-item {
@@ -262,52 +263,61 @@ header {
     color: black;
 }
 
-.firstRowRadio>.radioButton> label:hover{
-   background-color: rgb(247, 247, 247);
+.firstRowRadio>.radioButton>label:hover {
+    background-color: rgb(247, 247, 247);
 }
+
 .radioButton>input[type="radio"]:checked+label+.check {
     display: block;
 }
 
-.document3Image{
+.document3Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document1Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document1Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document3Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document3Image {
     display: block;
 }
 
 
-.document4Image{
+.document4Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document2Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document2Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document4Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .document4Image {
     display: block;
 }
 
 
-.job3Image{
+.job3Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job1Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job1Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job3Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job3Image {
     display: block;
 }
 
-.job4Image{
+.job4Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job2Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job2Image {
     display: none;
 }
-.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job4Image{
+
+.firstRowRadio>.radioButton>input[type="radio"]:checked+label .job4Image {
     display: block;
 }
 
@@ -315,10 +325,12 @@ header {
 .formPart3 {
     width: 100% !important;
 }
+
 .carouselImage {
     width: 350px;
     margin: 0 10px;
 }
+
 .carouselImage img {
     width: 100%;
 }
@@ -387,7 +399,8 @@ header {
 .wrapperSelectionCarousel .carouselImage input[type="radio"]:checked+label {
     border: 1px solid #4337FF;
     /* border-radius: 10px; */
-    filter:  drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.18));;
+    filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.18));
+    ;
     /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); */
 }
@@ -396,7 +409,7 @@ header {
     display: block;
 }
 
- .carouselImgOuter:hover {
+.carouselImgOuter:hover {
     overflow-y: scroll;
 }
 
@@ -966,17 +979,20 @@ header {
     gap: 20px;
 
 }
-.uploadSelectMenuInner{
+
+.uploadSelectMenuInner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 20px;
 }
-.uploadSelectMenuInner .leftMenuInner{
+
+.uploadSelectMenuInner .leftMenuInner {
     cursor: pointer;
 }
-.imageSelectMenuInner .leftMenuInner{
+
+.imageSelectMenuInner .leftMenuInner {
     cursor: pointer;
 }
 
@@ -988,7 +1004,8 @@ header {
     padding: 28px 35px;
     cursor: pointer;
 }
-.stackIconSection{
+
+.stackIconSection {
     background-color: #4337FF;
     color: white;
 }
@@ -1194,13 +1211,14 @@ header {
 
 .accordionInner {
     display: flex;
-   height: 40px;
-   padding: 0 10px;
+    height: 40px;
+    padding: 0 10px;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-.accordionInner:hover{
+
+.accordionInner:hover {
     background-color: #f3f3f3;
 }
 
@@ -1208,7 +1226,8 @@ header {
     margin: 0;
     margin-left: 13px;
 }
-.accordionInner .rightAccordion i{
+
+.accordionInner .rightAccordion i {
     margin-right: 5px;
 }
 
@@ -1251,7 +1270,7 @@ header {
 .leftMenuFonts .leftMenuSearch {
     position: relative;
     width: 100%;
-    
+
 }
 
 .leftMenuFonts .leftMenuSearch i {
@@ -1264,15 +1283,18 @@ header {
 .leftMenuFontsInner {
     width: 100%;
 }
-.leftMenuFontsInner .leftMenuRadio label{
+
+.leftMenuFontsInner .leftMenuRadio label {
     cursor: pointer;
 }
-.leftMenuFontsInner .leftMenuRadio label p{
+
+.leftMenuFontsInner .leftMenuRadio label p {
     margin: 0;
 
     padding: 10px 0;
 }
-.leftMenuFontsInner .leftMenuRadio label:hover{
+
+.leftMenuFontsInner .leftMenuRadio label:hover {
     background-color: rgb(250, 250, 250);
 }
 
@@ -1363,7 +1385,7 @@ header {
     overflow-y: hidden;
 }
 
-.buttonDisabledProp{
+.buttonDisabledProp {
     color: #888;
 
     text-align: center;
@@ -1371,9 +1393,140 @@ header {
     padding: 0;
 }
 
-.colorPlatesInner .leftMenuSearch img{
+.colorPlatesInner .leftMenuSearch img {
     cursor: pointer;
 }
+
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+}
+
+
+.tooltip4 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip4 .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip4:hover .tooltiptext4 {
+    visibility: visible;
+}
+
+
+.tooltip5 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip5 .tooltiptext5 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip5:hover .tooltiptext5 {
+    visibility: visible;
+}
+
+
+.tooltip6 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip6 .tooltiptext6 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip6:hover .tooltiptext6 {
+    visibility: visible;
+}
+
+
+
+
+
 @media only screen and (min-width: 1401px) {
 
     /* .mainForm .allForms {
@@ -1395,18 +1548,22 @@ header {
     .rightMenuInner img {
         width: 800px;
     }
+
     .accordionBody {
         font-size: 18px;
-      }
-      .accordion-button{
+    }
+
+    .accordion-button {
         font-size: 20px !important;
-      }
-      .innerSectionHeader i{
+    }
+
+    .innerSectionHeader i {
         font-size: 20px;
-      }
-      .mainBodyInnerLeft{
+    }
+
+    .mainBodyInnerLeft {
         top: 87px;
-      }
+    }
 }
 
 
@@ -1497,7 +1654,8 @@ header {
     .ImageSelectMenu {
         margin-top: 0;
     }
-    .uploadSelectMenu{
+
+    .uploadSelectMenu {
         margin-top: 0;
     }
 
@@ -1522,7 +1680,8 @@ header {
 
         margin-top: 60px;
     }
-    .uploadSelectMenuInner{
+
+    .uploadSelectMenuInner {
         margin-top: 60px;
     }
 
@@ -1538,7 +1697,8 @@ header {
     .mainForm .allForms {
         width: 80%;
     }
-    .firstRowRadio{
+
+    .firstRowRadio {
         flex-wrap: wrap;
     }
 }
