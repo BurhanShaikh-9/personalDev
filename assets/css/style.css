@@ -194,7 +194,6 @@ header {
 .mainForm .allForms .formFields .formFieldsInner label {
     left: 30px;
     color: rgba(9, 8, 31, 0.4);
-    ;
 }
 
 
@@ -1525,6 +1524,121 @@ header {
 
 
 
+#myDialog {
+    border: none;
+    box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.18);
+    flex-shrink: 0;
+    border-radius: 15px;
+    width: 484px;
+    backdrop-filter: brightness(10px);
+  }
+
+
+  .dialogInner h1{
+    color: #09081F;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+
+
+.authPopupButton{
+    width: 100%;
+  
+    height: 45px;
+   
+}
+  
+.authFormMain .authField {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.authFormMain .formIcon {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 23px;
+    color: #09081F66;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.authFormMain .authField .formFieldsInner input {
+    padding-left: 45px;
+    border: none;
+    background: rgba(67, 55, 255, 0.05);
+
+
+}
+
+.authFormMain .authField .formFieldsInner input:focus {
+    padding-left: 45px;
+    border: 1px solid #4337FF;
+    box-shadow: none;
+}
+
+.authFormMain .authField .formFieldsInner label {
+    left: 30px;
+    color: rgba(9, 8, 31, 0.4);
+}
+.authFormMain{
+    margin: 20px 40px;
+}
+
+.authFieldsInner{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    width: 100%;
+}
+.authFieldsInner button{
+    border: none;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(67, 55, 255, 0.05);
+ 
+}
+.authFieldsInner button p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.googleButton{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.googleButton:hover{
+    background-color: rgb(216, 216, 216);
+}
+.linkedInButton:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.linkedInButton{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleButton img{
+    width: 24px;
+}
+.linkedInButton img{
+    width: 24px;
+
+}
+/* .dialogMain{
+    max-width: 1000px;
+} */
 
 
 @media only screen and (min-width: 1401px) {
@@ -1694,6 +1808,18 @@ header {
 }
 
 @media only screen and (max-width: 568px) {
+    .authFormMain{
+        margin: 20px 10px !important;
+    }
+    .googleButton{
+        width: 100%;
+    }
+    .authFieldsInner{
+        flex-direction: column;
+    }
+    .linkedInButton{
+        width: 100%;
+    }
     .mainForm .allForms {
         width: 80%;
     }
@@ -1701,4 +1827,7 @@ header {
     .firstRowRadio {
         flex-wrap: wrap;
     }
+    .dialogInner h1 {
+        font-size: 30px;
+      }
 }

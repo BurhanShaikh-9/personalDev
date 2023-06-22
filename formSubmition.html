@@ -40,10 +40,10 @@
                 <div class="formSubmitionMain">
 
                     <img src="assets/images/image2.png" alt="">
-                    <h1 class="mainHeadingSub" >Congrats</h1>
+                    <h1 class="mainHeadingSub">Congrats</h1>
                     <p>Your website was successfully created!</p>
                     <div class="buttonsFunctional">
-                        <button class="buttonFunc buttonFunc1">
+                        <button class="buttonFunc buttonFunc1" onclick="openModal()">
                             <p>
                                 Preview
                             </p>
@@ -66,21 +66,78 @@
             </section>
         </div>
     </main>
+    <dialog id="myDialog">
+        <div class="dialogMain">
+            <div class="dialogInner">
+                <h1>Authentication</h1>
+                <div class="authFormMain">
+                    <div class="authField">
+                        <i class="formIcon ri-mail-line"></i>
+                       
+                        <div class="formFieldsInner form-floating mb-3 ">
+                            <input type="text" class="form-control userInputName" id="floatingInput" placeholder="">
+                            <label for="floatingInput">Enter Your Email</label>
+                        </div>
+                    </div>
+                    <div class="authField">
+                        <i class="formIcon ri-eye-line"></i>
+                        <div class="formFieldsInner form-floating mb-3 ">
+                            <input type="text" class="form-control userInputName" id="floatingInput" placeholder="">
+                            <label for="floatingInput">Generate Your Password</label>
+                        </div>
+                    </div>
+                    <div class="authField">
+                        <i class="formIcon ri-eye-off-line"></i>
+                        <div class="formFieldsInner form-floating mb-3 ">
+                            <input type="text" class="form-control userInputName" id="floatingInput" placeholder="">
+                            <label for="floatingInput">Re-Enter The Password</label>
+                        </div>
+                    </div>
+                    <div class="authField">
+                        <button class="themeButton authPopupButton">Submit</button>
+                    </div>
+                    <div class="authField">
+                        <div class="authFieldsInner">
+                            <button class="googleButton">
+                                <img src="assets/images/icons8-google-96.png" alt="">
+                                
+                                <p>Continue With Google</p>
+                            </button>
+                            <button class="linkedInButton">
+                                <img src="assets/images/icons8-linked-in-96.png" alt="">
+                                <p>Continue With LinkedIn</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+
 
     <script>
+        const myDialog = document.getElementById('myDialog');
+        const openModal = () => {
+            myDialog.showModal();
+        };
+        const closeModal = () => {
+            myDialog.close();
+        };
+    </script>
+    <script>
         function copyText(button) {
-          const textToCopy = button.innerText;
-      
-          navigator.clipboard.writeText(textToCopy)
-            .then(() => {
-              alert('Copied: ' + textToCopy);
-            })
-            .catch(err => {
-              console.error('Failed to copy text:', err);
-              // You can display an error message or handle the error here
-            });
+            const textToCopy = button.innerText;
+
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    alert('Copied: ' + textToCopy);
+                })
+                .catch(err => {
+                    console.error('Failed to copy text:', err);
+                });
         }
-      </script>
+    </script>
 </body>
 
 </html>
