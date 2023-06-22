@@ -31,12 +31,12 @@
 
         <div class="headerMain">
             <nav class="leftSection desktopHeader">
-                <div class="innerSectionHeader selectLayerSection"><i class="ri-stack-line"></i></div>
-                <div class="innerSectionHeader selectMediaSection"><i class="ri-upload-cloud-2-line"></i></div>
-                <div class="innerSectionHeader selectFontSection"> <i class="ri-text-spacing"></i></div>
-                <div class="innerSectionHeader selectImageSection"> <i class="ri-landscape-line"></i></div>
-                <div class="innerSectionHeader selectColorSection"> <i class="ri-contrast-drop-fill"></i></div>
-                <div class="innerSectionHeader selectAddonSection"><i class="ri-command-line"></i></div>
+                <div class="innerSectionHeader selectLayerSection stackIconSection"><i class="ri-stack-line"></i></div>
+                <div class="innerSectionHeader selectMediaSection cloudIconSection"><i class="ri-upload-cloud-2-line"></i></div>
+                <div class="innerSectionHeader selectFontSection textIconSection"> <i class="ri-text-spacing"></i></div>
+                <div class="innerSectionHeader selectImageSection landscapeIconSection"> <i  class="ri-landscape-line"></i></div>
+                <div class="innerSectionHeader selectColorSection dropIconSection"> <i class="ri-contrast-drop-fill"></i></div>
+                <div class="innerSectionHeader selectAddonSection commandIconSection"><i class="ri-command-line"></i></div>
                 <div class="sepratorSectionHeader">
                     <div class="seprator"></div>
                 </div>
@@ -118,27 +118,6 @@
         <div class="mainBody">
             <div id="mainBodyLeftId" class="mainBodyInnerLeft">
                 <div class="leftBodyInner">
-
-                    <div class="leftMenu leftMenuAll ImageSelectMenu" style="display: none;">
-
-                        <div class="imageSelectMenuInner">
-
-                            <div class="leftMenuInner">
-                                <img src="assets/images/image3.png" alt="">
-                            </div>
-                            <div class="leftMenuInner">
-                                <img src="assets/images/image3.png" alt="">
-                            </div>
-                            <div class="leftMenuInner">
-                                <img src="assets/images/image3.png" alt="">
-                            </div>
-                            <div class="leftMenuInner">
-                                <img src="assets/images/image3.png" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-
                     <div class="leftMenuAll  layerSelectMenu">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
@@ -289,6 +268,46 @@
                         </div>
                     </div>
 
+                    <div class="leftMenu leftMenuAll uploadSelectMenu" style="display: none;">
+
+                        <div class="uploadSelectMenuInner">
+
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="leftMenu leftMenuAll ImageSelectMenu" style="display: none;">
+
+                        <div class="imageSelectMenuInner">
+
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+                            <div class="leftMenuInner">
+                                <img src="assets/images/image3.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
                     <div class="leftMenuFonts leftMenuAll fontSelectMenu" style="display: none;">
                         <div class="leftMenuSearch">
                             <input class="form-control" type="text" placeholder="Search Fonts"
@@ -420,46 +439,132 @@
 
 
             $('.selectLayerSection').click(function () {
-                $('.layerSelectMenu').css('display', 'block');
+                $('.layerSelectMenu').css('display', 'block');   
+                $('.uploadSelectMenu').css('display', 'none');   
                 $('.fontSelectMenu').css('display', 'none');
                 $('.ImageSelectMenu').css('display', 'none');
                 $('.colorSelectMenu').css('display', 'none');
                 $('.buttonSelectMenu').css('display', 'none');
+
+                $('.stackIconSection').css('background-color', '#4337FF'); 
+                $('.stackIconSection').css('color', 'white');
+                $('.cloudIconSection').css('background-color', 'white'); 
+                $('.cloudIconSection').css('color', 'black');
+                $('.textIconSection').css('background-color', 'white'); 
+                $('.textIconSection').css('color', 'black');
+                $('.landscapeIconSection').css('background-color', 'white'); 
+                $('.landscapeIconSection').css('color', 'black');
+                $('.dropIconSection').css('background-color', 'white'); 
+                $('.dropIconSection').css('color', 'black');
+                $('.commandIconSection').css('background-color', 'white'); 
+                $('.commandIconSection').css('color', 'black');
             });
-            // $('.selectMediaSection').click(function () {
-            //     $('.layerSelectMenu').css('display', 'none');
-            //     $('.fontSelectMenu').css('display', 'none');
-            //     $('.ImageSelectMenu').css('display', 'none');
-            //     $('.colorSelectMenu').css('display', 'none');
-            //     $('.buttonSelectMenu').css('display', 'none');
-            // });
-            $('.selectFontSection').click(function () {
+            $('.cloudIconSection').click(function () {
                 $('.layerSelectMenu').css('display', 'none');
-                $('.fontSelectMenu').css('display', 'flex');
+                $('.uploadSelectMenu').css('display', 'block');  
+                $('.fontSelectMenu').css('display', 'none');
                 $('.ImageSelectMenu').css('display', 'none');
                 $('.colorSelectMenu').css('display', 'none');
                 $('.buttonSelectMenu').css('display', 'none');
+
+                $('.stackIconSection').css('background-color', 'white'); 
+                $('.stackIconSection').css('color', 'black');
+                $('.cloudIconSection').css('background-color', '#4337FF'); 
+                $('.cloudIconSection').css('color', 'white');
+                $('.textIconSection').css('background-color', 'white'); 
+                $('.textIconSection').css('color', 'black');
+                $('.landscapeIconSection').css('background-color', 'white'); 
+                $('.landscapeIconSection').css('color', 'black');
+                $('.dropIconSection').css('background-color', 'white'); 
+                $('.dropIconSection').css('color', 'black');
+                $('.commandIconSection').css('background-color', 'white'); 
+                $('.commandIconSection').css('color', 'black');
+            });
+            $('.selectFontSection').click(function () {
+                $('.layerSelectMenu').css('display', 'none');
+                $('.uploadSelectMenu').css('display', 'none');  
+                $('.fontSelectMenu').css('display', 'flex');
+                $('.textIconSection').css('background-color', '#4337FF'); 
+                $('.textIconSection').css('color', 'white'); 
+                $('.ImageSelectMenu').css('display', 'none');
+                $('.colorSelectMenu').css('display', 'none');
+                $('.buttonSelectMenu').css('display', 'none');
+
+                $('.stackIconSection').css('background-color', 'white'); 
+                $('.stackIconSection').css('color', 'black');
+                $('.cloudIconSection').css('background-color', 'white'); 
+                $('.cloudIconSection').css('color', 'black');
+                $('.textIconSection').css('background-color', '#4337FF'); 
+                $('.textIconSection').css('color', 'white');
+                $('.landscapeIconSection').css('background-color', 'white'); 
+                $('.landscapeIconSection').css('color', 'black');
+                $('.dropIconSection').css('background-color', 'white'); 
+                $('.dropIconSection').css('color', 'black');
+                $('.commandIconSection').css('background-color', 'white'); 
+                $('.commandIconSection').css('color', 'black');
             });
             $('.selectImageSection').click(function () {
                 $('.layerSelectMenu').css('display', 'none');
+                $('.uploadSelectMenu').css('display', 'none');  
                 $('.fontSelectMenu').css('display', 'none');
                 $('.ImageSelectMenu').css('display', 'flex');
                 $('.colorSelectMenu').css('display', 'none');
                 $('.buttonSelectMenu').css('display', 'none');
+
+                $('.stackIconSection').css('background-color', 'white'); 
+                $('.stackIconSection').css('color', 'black');
+                $('.cloudIconSection').css('background-color', 'white'); 
+                $('.cloudIconSection').css('color', 'black');
+                $('.textIconSection').css('background-color', 'white'); 
+                $('.textIconSection').css('color', 'black');
+                $('.landscapeIconSection').css('background-color', '#4337FF'); 
+                $('.landscapeIconSection').css('color', 'white');
+                $('.dropIconSection').css('background-color', 'white'); 
+                $('.dropIconSection').css('color', 'black');
+                $('.commandIconSection').css('background-color', 'white'); 
+                $('.commandIconSection').css('color', 'black');
             });
             $('.selectColorSection').click(function () {
                 $('.layerSelectMenu').css('display', 'none');
+                $('.uploadSelectMenu').css('display', 'none');  
                 $('.fontSelectMenu').css('display', 'none');
                 $('.ImageSelectMenu').css('display', 'none');
                 $('.colorSelectMenu').css('display', 'flex');
                 $('.buttonSelectMenu').css('display', 'none');
+
+                $('.stackIconSection').css('background-color', 'white'); 
+                $('.stackIconSection').css('color', 'black');
+                $('.cloudIconSection').css('background-color', 'white'); 
+                $('.cloudIconSection').css('color', 'black');
+                $('.textIconSection').css('background-color', 'white'); 
+                $('.textIconSection').css('color', 'black');
+                $('.landscapeIconSection').css('background-color', 'white'); 
+                $('.landscapeIconSection').css('color', 'black');
+                $('.dropIconSection').css('background-color', '#4337FF'); 
+                $('.dropIconSection').css('color', 'white');
+                $('.commandIconSection').css('background-color', 'white'); 
+                $('.commandIconSection').css('color', 'black');
             });
             $('.selectAddonSection').click(function () {
                 $('.layerSelectMenu').css('display', 'none');
+                $('.uploadSelectMenu').css('display', 'none');  
                 $('.fontSelectMenu').css('display', 'none');
                 $('.ImageSelectMenu').css('display', 'none');
                 $('.colorSelectMenu').css('display', 'none');
                 $('.buttonSelectMenu').css('display', 'flex');
+
+                $('.stackIconSection').css('background-color', 'white'); 
+                $('.stackIconSection').css('color', 'black');
+                $('.cloudIconSection').css('background-color', 'white'); 
+                $('.cloudIconSection').css('color', 'black');
+                $('.textIconSection').css('background-color', 'white'); 
+                $('.textIconSection').css('color', 'black');
+                $('.landscapeIconSection').css('background-color', 'white'); 
+                $('.landscapeIconSection').css('color', 'black');
+                $('.dropIconSection').css('background-color', 'white'); 
+                $('.dropIconSection').css('color', 'black');
+                $('.commandIconSection').css('background-color', '#4337FF'); 
+                $('.commandIconSection').css('color', 'white');
             });
         });
 
