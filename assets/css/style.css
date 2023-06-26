@@ -409,7 +409,7 @@ header {
 }
 
 .carouselImgOuter {
-    max-height: 460px;
+   height: 460px;
     overflow: hidden;
 
   }
@@ -428,7 +428,7 @@ header {
       transform: translateY(0);
     }
     100% {
-        transform: translateY(calc(-115% + 100vh));
+        transform: translateY(calc(-100% + 100vh));
     }
   }
   
