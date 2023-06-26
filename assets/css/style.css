@@ -408,15 +408,45 @@ header {
     display: block;
 }
 
-.carouselImgOuter:hover {
-    overflow-y: scroll;
-}
-
 .carouselImgOuter {
     max-height: 460px;
-    overflow-y: hidden;
-}
+    overflow: hidden;
 
+  }
+  
+  .carouselImgOuter:hover .scrollContent {
+    width: 102.5%;
+    animation: scrollAnimation 2s forwards linear;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+   
+  }
+  
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(-115% + 100vh));
+    }
+  }
+  
+  .scrollContent::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .scrollContent::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .scrollContent::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+
+
+  
 .carouselImgOuter {
     scrollbar-width: thin;
     /* Firefox */
@@ -1529,7 +1559,7 @@ header {
     box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.18);
     flex-shrink: 0;
     border-radius: 15px;
-    width: 484px;
+    max-width: 484px;
     backdrop-filter: brightness(10px);
   }
 
