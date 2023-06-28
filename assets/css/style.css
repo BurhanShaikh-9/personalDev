@@ -1130,6 +1130,7 @@ header {
     display: none;
     position: fixed;
     top: 145px;
+    z-index: 1;
 }
 
 .leftBodyInner {
@@ -1161,6 +1162,7 @@ header {
     top: 84px;
     bottom: 0;
     transition: all 0.2s ease-in;
+    
 }
 
 
@@ -1887,7 +1889,7 @@ input.notFilled {
 
 
     .mainBodyInnerLeft {
-        z-index: 1;
+        z-index: 3;
         top: 59px;
 
     }
