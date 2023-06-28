@@ -105,10 +105,12 @@ header {
 .mainSection .mainHeading h1 {
     font-family: 'productSansBold';
     margin-bottom: 15px;
+    font-weight: 800;
 }
 
 .mainSection .mainHeading p {
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
 .getStartedButton {
@@ -156,7 +158,7 @@ header {
 }
 
 .allForms {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .mainForm .allForms {
@@ -193,7 +195,8 @@ header {
 
 .mainForm .allForms .formFields .formFieldsInner label {
     left: 30px;
-    color: rgba(9, 8, 31, 0.4);
+    /* color: rgba(9, 8, 31, 0.4); */
+    color: black;
 }
 
 
@@ -249,6 +252,7 @@ header {
 
 .creationTypeTitle {
     margin-top: 10px;
+    font-weight: 600;
 }
 
 
@@ -409,44 +413,51 @@ header {
 }
 
 .carouselImgOuter {
-   height: 460px;
+    max-height: 460px;
     overflow: hidden;
 
-  }
-  
-  .carouselImgOuter:hover .scrollContent {
+}
+
+.carouselImgOuter:hover .scrollContent {
     width: 102.5%;
-    animation: scrollAnimation 2s forwards linear;
+    animation: scrollAnimation 3s forwards linear;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-   
-  }
-  
-  @keyframes scrollAnimation {
+
+}
+
+@keyframes scrollAnimation {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-        transform: translateY(calc(-100% + 100vh));
+        transform: translateY(calc(-100% + 450px));
     }
-  }
-  
-  .scrollContent::-webkit-scrollbar {
+
+}
+
+
+
+
+
+
+.scrollContent::-webkit-scrollbar {
     width: 0.5em;
-  }
-  
-  .scrollContent::-webkit-scrollbar-track {
+}
+
+.scrollContent::-webkit-scrollbar-track {
     background-color: transparent;
-  }
-  
-  .scrollContent::-webkit-scrollbar-thumb {
+}
+
+.scrollContent::-webkit-scrollbar-thumb {
     background-color: transparent;
-  }
+}
 
 
 
-  
+
 .carouselImgOuter {
     scrollbar-width: thin;
     /* Firefox */
@@ -556,7 +567,7 @@ header {
     align-items: center;
     gap: 10px;
     overflow-x: auto;
-    padding: 20px 0;
+    padding: 10px 0 30px 0;
 }
 
 .allFontsSelector .fontButtonSelector label {
@@ -709,9 +720,11 @@ header {
 .formContinueButton {
     height: 55px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 25px;
 }
+
+
 
 .paginationMain {
     display: flex;
@@ -737,12 +750,15 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-bottom: 50px;
 }
 
 .footerMain .chatImage {
     width: 70px;
+    POSITION: fixed;
+    RIGHT: 3%;
+    BOTTOM: 15px;
 }
 
 .formButtonLast {
@@ -924,6 +940,7 @@ header {
 
 .buttonFunc p {
     margin-bottom: 0;
+    margin-right: 10px;
 }
 
 .buttonFunc1 {
@@ -1193,8 +1210,13 @@ header {
     width: 100%;
     margin-left: 320px;
     overflow: hidden;
+    position: relative;
 
-
+}
+.chatIconDiv{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .rightMenu {
@@ -1370,6 +1392,10 @@ header {
     border: none;
 
 }
+.leftMenuInnerPara{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
 
 .leftMenuInnerButtons .halfRoundButton {
     width: 100%;
@@ -1405,25 +1431,78 @@ header {
 }
 
 .formPart3Pagination.allForms {
-    max-width: 560px;
+    max-width: 445px;
 }
 
 
 .carouselImgOuter {
     max-height: 460px;
     overflow-y: hidden;
+    border-radius: 15px;
 }
 
 .buttonDisabledProp {
-    color: #888;
+    color: #4337FF;
 
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* input css */
+
+/* CSS Styles */
+.formFieldsInner {
+    position: relative;
+}
+
+.formFieldsInner .inputStatus {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    color: #4337FF;
+    font-size: 14px;
+    display: none;
+}
+
+.formFieldsInner.filled .inputStatus {
+    display: none;
+}
+
+.formFieldsInner.invalid {
+    border-color: #E9967A;
+}
+
+.formPart1Button {
+    background-color: #4337FF;
+}
+.formPart1Button:disabled{
+    background-color: grey;
+}
+
+.formPart1Button.valid {
+    background-color: #4337FF;
+}
+
+.formFieldsInner.invalid+.formPart1Button {
+    background-color: grey;
+}
+
+input.formOneInputs {
+    border-bottom: 2px solid #4337FF ;
+}
+
+input.notFilled {
+    border: 3px solid brown;
+} 
+
+
 .colorPlatesInner .leftMenuSearch img {
     cursor: pointer;
+}
+.leftMenuSearch .leftMenuSearchPara{
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -1432,6 +1511,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip1 .tooltiptext1 {
     visibility: hidden;
     width: 120px;
@@ -1443,6 +1523,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip1:hover .tooltiptext1 {
     visibility: visible;
 }
@@ -1453,6 +1534,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip2 .tooltiptext2 {
     visibility: hidden;
     width: 120px;
@@ -1464,6 +1546,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip2:hover .tooltiptext2 {
     visibility: visible;
 }
@@ -1474,6 +1557,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip3 .tooltiptext3 {
     visibility: hidden;
     width: 120px;
@@ -1485,6 +1569,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip3:hover .tooltiptext3 {
     visibility: visible;
 }
@@ -1495,6 +1580,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip4 .tooltiptext4 {
     visibility: hidden;
     width: 120px;
@@ -1506,6 +1592,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip4:hover .tooltiptext4 {
     visibility: visible;
 }
@@ -1516,6 +1603,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip5 .tooltiptext5 {
     visibility: hidden;
     width: 120px;
@@ -1527,6 +1615,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip5:hover .tooltiptext5 {
     visibility: visible;
 }
@@ -1537,6 +1626,7 @@ header {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 .tooltip6 .tooltiptext6 {
     visibility: hidden;
     width: 120px;
@@ -1548,6 +1638,7 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 .tooltip6:hover .tooltiptext6 {
     visibility: visible;
 }
@@ -1561,27 +1652,27 @@ header {
     border-radius: 15px;
     max-width: 484px;
     backdrop-filter: brightness(10px);
-  }
+}
 
 
-  .dialogInner h1{
+.dialogInner h1 {
     color: #09081F;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 25px;
-  }
-
-
-
-.authPopupButton{
-    width: 100%;
-  
-    height: 45px;
-   
 }
-  
+
+
+
+.authPopupButton {
+    width: 100%;
+
+    height: 45px;
+
+}
+
 .authFormMain .authField {
     position: relative;
     margin-bottom: 25px;
@@ -1615,11 +1706,12 @@ header {
     left: 30px;
     color: rgba(9, 8, 31, 0.4);
 }
-.authFormMain{
+
+.authFormMain {
     margin: 20px 40px;
 }
 
-.authFieldsInner{
+.authFieldsInner {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1627,50 +1719,63 @@ header {
     gap: 10px;
     width: 100%;
 }
-.authFieldsInner button{
+
+.authFieldsInner button {
     border: none;
     height: 60px;
     border-radius: 10px;
     background: rgba(67, 55, 255, 0.05);
- 
+
 }
-.authFieldsInner button p{
+
+.authFieldsInner button p {
     margin: 0;
     font-size: 12px;
 }
 
-.googleButton{
+.googleButton {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.googleButton:hover{
-    background-color: rgb(216, 216, 216);
-}
-.linkedInButton:hover{
+
+.googleButton:hover {
     background-color: rgb(216, 216, 216);
 }
 
-.linkedInButton{
+.linkedInButton:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.linkedInButton {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.googleButton img{
+
+.googleButton img {
     width: 24px;
 }
-.linkedInButton img{
+
+.linkedInButton img {
     width: 24px;
 
 }
+
 /* .dialogMain{
     max-width: 1000px;
 } */
 
 
+@media only screen and (min-width: 1701px) {
+    .rightMenuInner img {
+        width: 80% !important;
+        max-width: 1250px;
+    }
+}
 @media only screen and (min-width: 1401px) {
 
     /* .mainForm .allForms {
@@ -1690,7 +1795,7 @@ header {
     }
 
     .rightMenuInner img {
-        width: 800px;
+        width:  800px;
     }
 
     .accordionBody {
@@ -1838,18 +1943,22 @@ header {
 }
 
 @media only screen and (max-width: 568px) {
-    .authFormMain{
+    .authFormMain {
         margin: 20px 10px !important;
     }
-    .googleButton{
+
+    .googleButton {
         width: 100%;
     }
-    .authFieldsInner{
+
+    .authFieldsInner {
         flex-direction: column;
     }
-    .linkedInButton{
+
+    .linkedInButton {
         width: 100%;
     }
+
     .mainForm .allForms {
         width: 80%;
     }
@@ -1857,7 +1966,8 @@ header {
     .firstRowRadio {
         flex-wrap: wrap;
     }
+
     .dialogInner h1 {
         font-size: 30px;
-      }
+    }
 }

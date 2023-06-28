@@ -9,26 +9,30 @@
 
     <script>
 
-const carouselImgOuter = document.querySelector('.carouselImgOuter');
-const scrollContent = carouselImgOuter.querySelector('.scrollContent');
-const image = scrollContent.querySelector('img');
+        const carouselImgOuter = document.querySelector('.carouselImgOuter');
+        const scrollContent = carouselImgOuter.querySelector('.scrollContent');
+        const image = scrollContent.querySelector('img');
 
-carouselImgOuter.addEventListener('mouseover', () => {
-  const scrollHeight = scrollContent.scrollHeight;
-  const clientHeight = scrollContent.clientHeight;
+        carouselImgOuter.addEventListener('mouseover', () => {
+            const scrollHeight = scrollContent.scrollHeight;
+            const clientHeight = scrollContent.clientHeight;
 
-  if (scrollHeight > clientHeight) {
-    const imageBottomOffset = image.getBoundingClientRect().bottom - carouselImgOuter.getBoundingClientRect().top;
-    const divHeight = carouselImgOuter.offsetHeight;
+            if (scrollHeight > clientHeight) {
+                const imageBottomOffset = image.getBoundingClientRect().bottom - carouselImgOuter.getBoundingClientRect().top;
+                const divHeight = carouselImgOuter.offsetHeight;
 
-    if (imageBottomOffset <= divHeight) {
-      scrollContent.scrollTop = scrollHeight - clientHeight;
-      scrollContent.style.animation = 'none';
-    } else {
-      scrollContent.style.animation = 'scrollAnimation 5s infinite linear';
-    }
-  }
-});
+                if (imageBottomOffset <= divHeight) {
+                    scrollContent.scrollTop = scrollHeight - clientHeight;
+                    scrollContent.style.animation = 'none';
+                } else {
+                    scrollContent.style.animation = 'scrollAnimation 5s infinite linear';
+                }
+            }
+        });
+
+
+
+
 
     </script>
 
@@ -81,7 +85,6 @@ carouselImgOuter.addEventListener('mouseover', () => {
 
         <section class="mainSection formSection1">
             <div class="container">
-
                 <div class="mainHeading">
                     <h1>Dream it. Build it. Inspire.</h1>
                     <p>Building a legacy of inspiration through visionary creations</p>
@@ -90,35 +93,36 @@ carouselImgOuter.addEventListener('mouseover', () => {
                 <div class="mainForm">
                     <div class="formPart1 allForms">
                         <div class="formFields">
-                            <i class=" formIcon ri-user-3-line"></i>
-                            <div class="formFieldsInner form-floating mb-3 ">
-                                <input type="text" class="form-control userInputName" id="floatingInput" placeholder="">
+                            <i class="formIcon ri-user-3-line"></i>
+                            <div class="formFieldsInner form-floating mb-3">
+                                <input type="text" class="form-control userInputName formOneInputs" id="floatingInput"
+                                    placeholder="">
                                 <label for="floatingInput">Name</label>
+                                <span class="inputStatus">Fill the field</span>
                             </div>
                         </div>
                         <div class="formFields">
-                            <i class=" formIcon ri-smartphone-line"></i>
+                            <i class="formIcon ri-smartphone-line"></i>
                             <div class="formFieldsInner form-floating mb-3">
-                                <input type="number" class="form-control userInputNumber" id="floatingInput"
-                                    placeholder="">
+                                <input type="number" class="form-control userInputNumber formOneInputs"
+                                    id="floatingInput" placeholder="">
                                 <label for="floatingInput">Phone No.</label>
+                                <span class="inputStatus">Fill the field</span>
                             </div>
                         </div>
                         <div class="formFields">
                             <i class="formIcon ri-mail-line"></i>
                             <div class="formFieldsInner form-floating mb-3">
-                                <input type="email" class="form-control userInputEmail" id="floatingInput"
+                                <input type="email" class="form-control userInputEmail formOneInputs" id="floatingInput"
                                     placeholder="">
                                 <label for="floatingInput">Email Id</label>
+                                <span class="inputStatus">Fill the field</span>
                             </div>
                         </div>
                         <div class="formFields">
-                            <p class="buttonDisabledProp">Enter proper Fields</p>
+                            <!-- <p class="buttonDisabledProp">Enter proper Fields</p> -->
                             <div class="ContinueButtonOuter">
-                                <button class="formContinueButton themeButton formPart1Button" disabled>
-                                    Continue
-                                </button>
-
+                                <button class="formContinueButton themeButton formPart1Button">Continue</button>
                             </div>
                         </div>
 
@@ -133,12 +137,12 @@ carouselImgOuter.addEventListener('mouseover', () => {
                             <span class="paginationInner"></span>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
         </section>
+
+
+
         <section class="mainSection formSection2" style="display: none;">
             <div class="container">
 
@@ -214,91 +218,90 @@ carouselImgOuter.addEventListener('mouseover', () => {
             <div class="mainForm">
 
                 <div class="formPart3 allForms">
-
                     <div class="formFields carouselField low-opacity">
                         <div class="wrapperSelectionCarousel">
                             <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb1">
                                 <label for="selectWeb1">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/Hifi.png" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/Hifi.png" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/check.png" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
                                 </label>
-                              </div>
-                              
-                              <div class="carouselImage">
+                            </div>
+
+                            <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb2">
                                 <label for="selectWeb2">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/Homepage.png" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/Homepage.png" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/check.png" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
                                 </label>
-                              </div>
-                              <div class="carouselImage">
+                            </div>
+                            <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb3">
                                 <label for="selectWeb3">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/image7.jpg" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/image7.jpg" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/check.png" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
                                 </label>
-                              </div>
+                            </div>
 
-                             
-                              <div class="carouselImage">
+
+                            <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb6">
                                 <label for="selectWeb6">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/Landing Page 01.png" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/Landing Page 01.png" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/check.png" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
                                 </label>
-                              </div>
-                              <div class="carouselImage">
+                            </div>
+                            <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb7">
                                 <label for="selectWeb7">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/Itech.jpg" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/Itech.jpg" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/Home Page.jpg" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/Home Page.jpg" alt="">
+                                    </div>
                                 </label>
-                              </div>
-                              <div class="carouselImage">
+                            </div>
+                            <div class="carouselImage">
                                 <input type="radio" name="selectionMenu" id="selectWeb8">
                                 <label for="selectWeb8">
-                                  <div class="carouselImgOuter">
-                                    <div class="scrollContent">
-                                      <img id="" src="assets/images/Home Page.png" alt="">
+                                    <div class="carouselImgOuter">
+                                        <div class="scrollContent">
+                                            <img id="" src="assets/images/Home Page.png" alt="">
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="checkcarousel">
-                                    <img src="assets/images/check.png" alt="">
-                                  </div>
+                                    <div class="checkcarousel">
+                                        <img src="assets/images/check.png" alt="">
+                                    </div>
                                 </label>
-                              </div>
-                    
+                            </div>
+
 
                         </div>
                     </div>
@@ -734,8 +737,6 @@ carouselImgOuter.addEventListener('mouseover', () => {
             </div>
 
         </section>
-
-
     </main>
     <footer>
         <div class="container">
@@ -751,34 +752,101 @@ carouselImgOuter.addEventListener('mouseover', () => {
 
 
 
+    <!-- carousel script  -->
+    <script>
 
+        $('.carouselReview').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: true,
+        });
+    </script>
 
     <!-- Form switching  -->
     <script>
 
+
         $(document).ready(function () {
+            const firstFormInputs = $('.formOneInputs');
 
             $('.formPart1Button').click(function () {
-                $('.formSection1').css('display', 'none');
-                $('.formSection2').css('display', 'block');
-                $('.formSection3').css('display', 'none');
-                $('.formSection4').css('display', 'none');
-                $('.formSection5').css('display', 'none');
-                $('.formSection6').css('display', 'none');
-                $('.formSection7').css('display', 'none');
-                $('.formSection8').css('display', 'none');
+                let hasEmptyFields = false;
+
+                firstFormInputs.each(function () {
+                    const input = $(this);
+                    const value = input.val().trim();
+                    if (value === '') {
+                        $('.inputStatus').css('display', 'block');
+                        hasEmptyFields = true;
+                    } else {
+                        $('.inputStatus').css('display', 'none');
+                    }
+                });
+
+                if (!hasEmptyFields) {
+                    $('.formSection1').css('display', 'none');
+                    $('.formSection2').css('display', 'block');
+                    $('.formSection3').css('display', 'none');
+                    $('.formSection4').css('display', 'none');
+                    $('.formSection5').css('display', 'none');
+                    $('.formSection6').css('display', 'none');
+                    $('.formSection7').css('display', 'none');
+                    $('.formSection8').css('display', 'none');
+                }
             });
 
             $('.formPart2Button').click(function () {
-                $('.formSection1').css('display', 'none');
-                $('.formSection2').css('display', 'none');
+                $('.formSection1, .formSection2, .formSection3, .formSection4, .formSection5, .formSection6, .formSection7, .formSection8').css('display', 'none');
+
+                // Show formSection3 immediately
                 $('.formSection3').css('display', 'block');
-                $('.wrapperSelectionCarousel').slick('resize');
-                $('.formSection4').css('display', 'none');
-                $('.formSection5').css('display', 'none');
-                $('.formSection6').css('display', 'none');
-                $('.formSection7').css('display', 'none');
-                $('.formSection8').css('display', 'none');
+
+                // Initialize the carousel
+                $('.wrapperSelectionCarousel').slick({
+                    infinite: true,
+                    arrows: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    dots: false,
+                    centerMode: true,
+                    focusOnSelect: true,
+                    responsive: [
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                            }
+                        },
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 568,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+
+                // Hide other form sections
+                $('.formSection4, .formSection5, .formSection6, .formSection7, .formSection8').css('display', 'none');
             });
 
             $('.formPart3Button').click(function () {
@@ -840,62 +908,6 @@ carouselImgOuter.addEventListener('mouseover', () => {
         });
     </script>
 
-    <!-- carousel script  -->
-    <script>
-        $('.wrapperSelectionCarousel').slick({
-            infinite: true,
-            arrows: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-
-                    }
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 568,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-        // $('.selectionCarousel').slick('unslick');
-
-
-
-        $('.carouselReview').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-            arrows: true,
-        });
-    </script>
-
     <!-- select text Input Box -->
     <script>
         const select = document.getElementById('mySelect');
@@ -944,45 +956,66 @@ carouselImgOuter.addEventListener('mouseover', () => {
         }
     </script>
 
-
-
-
     <!-- Form Validation -->
     <script>
-
-        // form step First Validation
-
+        const firstFormInputs = $('.formOneInputs');
         const userName = $('.userInputName');
         const userEmail = $('.userInputEmail');
         const userNumber = $('.userInputNumber');
         const nextButton = $('.formPart1Button');
-        const warningShow = $('.buttonDisabledProp');
+        // const warningShow = $('.buttonDisabledProp');
         const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-        const phoneRegex = /^[-+]?\d{10,}$/;
-        // const phoneRegex = /^\d{9}$/;
+        const nameRegex = /^[a-zA-Z\s]*$/;
+        const numberRegex = /^[-+\d]{9,}$/;
+
         const firstFormValidation = () => {
-            const nameValue = userName.val();
-            const emailValue = userEmail.val();
-            const numberValue = userNumber.val();
-            const isNameValid = nameValue.trim() !== '';
-            const isEmailValid = emailRegex.test(emailValue);
-            const isNumberValid = phoneRegex.test(numberValue);
-            if (isNameValid && isEmailValid && isNumberValid) {
-                nextButton.prop('disabled', false);
-                warningShow.hide();
-                nextButton.css("background-color", "#4337FF");
-            } else {
-                nextButton.prop('disabled', true);
-                nextButton.css("background-color", "grey");
-                warningShow.show();
-            }
+            const isNameValid = nameRegex.test(userName.val().trim());
+            const isEmailValid = emailRegex.test(userEmail.val().trim());
+            const isNumberValid = numberRegex.test(userNumber.val().trim());
+
+            firstFormInputs.each(function () {
+                const input = $(this);
+                const inputValue = input.val().trim();
+
+                if (inputValue === '') {
+                    input.addClass('notFilled');
+                    input.removeClass('filled');
+                    input.css('border-bottom', '2px solid #4337FF');
+                    input.siblings('.inputStatus').show();
+                } else {
+                    input.removeClass('notFilled');
+                    input.addClass('filled');
+                    input.css('border-bottom', 'none');
+                    input.siblings('.inputStatus').hide();
+                }
+            });
+
+            firstFormInputs.each(function () {
+                const input = $(this);
+                const inputValue = input.val().trim();
+
+                if (inputValue === '') {
+                    input.css('border', '2px solid #fff');
+                } else if (input.is(userEmail) && !isEmailValid) {
+                    input.css('border', '2px solid #E9967A');
+                } else if ((input.is(userName) && !isNameValid) || (input.is(userNumber) && !isNumberValid)) {
+                    input.css('border', '2px solid #E9967A');
+                } else {
+                    input.css('border', '2px solid #fff');
+                }
+            });
+
+            const allInputsValid = isNameValid && isEmailValid && isNumberValid;
+            const isAnyInputEmpty = Array.from(firstFormInputs).some((input) => $(input).val().trim() === '');
+
+            nextButton.prop('disabled', !allInputsValid || isAnyInputEmpty);
+            warningShow.toggle(!allInputsValid || isAnyInputEmpty);
+            nextButton.css('background-color', (allInputsValid && !isAnyInputEmpty) ? '#4337FF' : 'grey');
+
         };
-        userName.on('input', firstFormValidation);
-        userEmail.on('input', firstFormValidation);
-        userNumber.on('input', firstFormValidation);
 
+        firstFormInputs.on('input', firstFormValidation);
 
-        // form Step two validation 
 
     </script>
 
