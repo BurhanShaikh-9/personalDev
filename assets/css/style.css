@@ -1945,6 +1945,9 @@ input.notFilled {
     .rightMenuInner img {
         width: 80%;
     }
+    .allFontsSelector{
+        justify-content: flex-start;
+    }
 }
 
 @media only screen and (max-width: 568px) {
