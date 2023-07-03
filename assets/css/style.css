@@ -401,7 +401,7 @@ header {
 
 .wrapperSelectionCarousel .carouselImage input[type="radio"]:checked+label {
     border: 1px solid #4337FF;
-    /* border-radius: 10px; */
+    border-radius: 15px;
     filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.18));
     ;
     /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -1053,6 +1053,9 @@ header {
 
 .stackIconSection {
     background-color: #4337FF;
+    color: white;
+}
+.stackIconSection a{
     color: white;
 }
 
@@ -1767,9 +1770,7 @@ input.notFilled {
 
 }
 
-/* .dialogMain{
-    max-width: 1000px;
-} */
+
 
 
 @media only screen and (min-width: 1701px) {
@@ -1829,6 +1830,9 @@ input.notFilled {
 }
 
 @media only screen and (max-width: 991px) {
+    .mainSection{
+        margin-top: 40px;
+    }
     .selectedFont {
         width: 90%;
     }
@@ -1926,7 +1930,6 @@ input.notFilled {
 
         margin-top: 57px;
     }
-
     .imageSelectMenuInner {
 
         margin-top: 60px;
