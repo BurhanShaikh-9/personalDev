@@ -1978,6 +1978,12 @@ input.notFilled {
 }
 
 @media only screen and (max-width: 568px) {
+    .chatIconDiv a img{
+        width: 45px;
+    }
+    .footerMain .chatImage{
+        width: 45px;
+    }
     .mainSection .mainHeading p{
         font-size: 17px;
     }
