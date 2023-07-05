@@ -8,13 +8,26 @@
     src: url('../fonts/ProductSansBold.ttf') format('truetype');
 }
 
+.bodyMain{
+    height: 100vh;
+    background-color: #fafaff;
+}
+
 header {
     font-family: 'productSansRegular';
     padding: 20px 0;
     border-bottom: 1px solid rgba(9, 8, 31, 0.1);
     font-size: 18px;
+    background-color: white;
 }
 
+main {
+    background-color: #fafaff;
+}
+
+footer{
+    background-color: #fafaff;
+}
 
 .themeButton {
     background-color: #4337FF;
@@ -92,10 +105,15 @@ header {
 
 /* Body */
 .mainSection {
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     font-family: 'productSansRegular';
     font-size: 18px;
 }
+.mainSectionIndex{
+    padding-bottom: 0;
+}
+
 
 .mainSection .mainHeading {
     text-align: center;
@@ -751,7 +769,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     /* margin-top: 150px; */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .footerMain .chatImage {
@@ -928,6 +946,7 @@ header {
 
 .formSubmitionMain .mainHeadingSub {
     font-family: 'productSansBold';
+    font-size: 3.5em;
 }
 
 .buttonFunc {
@@ -941,6 +960,7 @@ header {
 .buttonFunc p {
     margin-bottom: 0;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 .buttonFunc1 {
@@ -963,7 +983,7 @@ header {
 .copyButtonMain {
     width: 100%;
     color: rgba(9, 8, 31, 0.75);
-    ;
+    max-width: 315px;
 }
 
 .copyButtonMain button {
@@ -996,7 +1016,9 @@ header {
     margin-bottom: 20px;
 }
 
-
+.formSubmitionMainTitle {
+    margin-bottom: 30px;
+}
 
 
 
@@ -1055,7 +1077,8 @@ header {
     background-color: #4337FF;
     color: white;
 }
-.stackIconSection a{
+
+.stackIconSection a {
     color: white;
 }
 
@@ -1165,7 +1188,7 @@ header {
     top: 84px;
     bottom: 0;
     transition: all 0.2s ease-in;
-    
+
 }
 
 
@@ -1218,7 +1241,8 @@ header {
     position: relative;
 
 }
-.chatIconDiv{
+
+.chatIconDiv {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -1397,7 +1421,8 @@ header {
     border: none;
 
 }
-.leftMenuInnerPara{
+
+.leftMenuInnerPara {
     margin-bottom: 0;
     font-weight: bold;
     margin-top: 10px;
@@ -1482,7 +1507,8 @@ header {
 .formPart1Button {
     background-color: #4337FF;
 }
-.formPart1Button:disabled{
+
+.formPart1Button:disabled {
     background-color: grey;
 }
 
@@ -1495,18 +1521,19 @@ header {
 }
 
 input.formOneInputs {
-    border-bottom: 2px solid #4337FF ;
+    border-bottom: 2px solid #4337FF;
 }
 
 input.notFilled {
     border: 3px solid brown;
-} 
+}
 
 
 .colorPlatesInner .leftMenuSearch img {
     cursor: pointer;
 }
-.leftMenuSearch .leftMenuSearchPara{
+
+.leftMenuSearch .leftMenuSearchPara {
     margin-top: 10px;
     margin-bottom: 0;
     font-weight: bold;
@@ -1772,18 +1799,23 @@ input.notFilled {
 
 }
 
-.formPart7Button{
+.formPart7Button {
     margin-top: 35px !important;
 }
 
-.formSelectBackground{
+.formSelectBackground {
     appearance: none;
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
-    padding-right: 24px; /* Adjust as needed */
-    background-image: url(../images/downArrowPng.png); /* Replace with your custom arrow image */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    padding-right: 24px;
+    /* Adjust as needed */
+    background-image: url(../images/downArrowPng.png);
+    /* Replace with your custom arrow image */
     background-repeat: no-repeat;
-    background-position: right center; /* Adjust arrow position */
+    background-position: right center;
+    /* Adjust arrow position */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
     background-position: right .75rem center !important;
@@ -1800,6 +1832,7 @@ input.notFilled {
         max-width: 1250px;
     }
 }
+
 @media only screen and (min-width: 1401px) {
 
     /* .mainForm .allForms {
@@ -1808,7 +1841,8 @@ input.notFilled {
     .selectedFont {
         width: 51%;
     }
-    .fontWeightBold{
+
+    .fontWeightBold {
         font-size: 27px;
     }
 
@@ -1822,7 +1856,7 @@ input.notFilled {
     }
 
     .rightMenuInner img {
-        width:  800px;
+        width: 800px;
     }
 
     .accordionBody {
@@ -1851,15 +1885,17 @@ input.notFilled {
     .mainForm .allForms {
         width: 60%;
     }
-    .rightMenuInner img{
+
+    .rightMenuInner img {
         width: 600px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .mainSection{
-        margin-top: 40px;
+    .mainSection {
+        padding-top: 40px;
     }
+
     .selectedFont {
         width: 90%;
     }
@@ -1957,6 +1993,7 @@ input.notFilled {
 
         margin-top: 57px;
     }
+
     .imageSelectMenuInner {
 
         margin-top: 60px;
@@ -1972,21 +2009,25 @@ input.notFilled {
     .rightMenuInner img {
         width: 80%;
     }
-    .allFontsSelector{
+
+    .allFontsSelector {
         justify-content: flex-start;
     }
 }
 
 @media only screen and (max-width: 568px) {
-    .chatIconDiv a img{
+    .chatIconDiv a img {
         width: 45px;
     }
-    .footerMain .chatImage{
+
+    .footerMain .chatImage {
         width: 45px;
     }
-    .mainSection .mainHeading p{
+
+    .mainSection .mainHeading p {
         font-size: 17px;
     }
+
     .authFormMain {
         margin: 20px 10px !important;
     }

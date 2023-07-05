@@ -25,7 +25,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body class="bodyMain">
 
     <header class="headerTemplateEditor">
 
@@ -110,7 +110,7 @@
 
             <div class="rightSection">
                 <div class="innerSectionRight"> <i class="ri-play-line"></i></div>
-                <div class="innerSectionRight"> <button class="shareButton themeButton">Share <i
+                <div class="innerSectionRight"> <button class="shareButton themeButton" onclick="redirectFunction()">Share <i
                             class="ri-share-line"></i></button> </div>
 
             </div>
@@ -440,6 +440,9 @@
         </div>
     </main>
     <script>
+        const redirectFunction = () =>{
+            window.location.href = "formSubmition.html";
+        }
 
         $(document).ready(function () {
             $('.leftPanelButton').click(function () {
