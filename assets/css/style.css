@@ -1192,7 +1192,7 @@ header {
 
 
 .leftMenuAll {
-
+    font-family: 'productSansRegular' !important;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1238,7 +1238,7 @@ header {
 }
 
 .rightMenuInner img {
-    width: 600px;
+    width: 750px;
 
     border-radius: 10px;
 }
@@ -1399,6 +1399,7 @@ header {
 }
 .leftMenuInnerPara{
     margin-bottom: 0;
+    font-weight: bold;
     margin-top: 10px;
 }
 
@@ -1508,6 +1509,7 @@ input.notFilled {
 .leftMenuSearch .leftMenuSearchPara{
     margin-top: 10px;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 
@@ -1770,6 +1772,25 @@ input.notFilled {
 
 }
 
+.formPart7Button{
+    margin-top: 35px !important;
+}
+
+.formSelectBackground{
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    padding-right: 24px; /* Adjust as needed */
+    background-image: url(../images/downArrowPng.png); /* Replace with your custom arrow image */
+    background-repeat: no-repeat;
+    background-position: right center; /* Adjust arrow position */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right .75rem center !important;
+    background-size: 16px 12px !important;
+    border: 1px solid #ced4da !important;
+
+}
 
 
 
@@ -1785,7 +1806,10 @@ input.notFilled {
         width: 22%;
       } */
     .selectedFont {
-        width: 62%;
+        width: 51%;
+    }
+    .fontWeightBold{
+        font-size: 27px;
     }
 
     .leftMenuAll {
@@ -1826,6 +1850,9 @@ input.notFilled {
 
     .mainForm .allForms {
         width: 60%;
+    }
+    .rightMenuInner img{
+        width: 600px;
     }
 }
 
@@ -1951,6 +1978,9 @@ input.notFilled {
 }
 
 @media only screen and (max-width: 568px) {
+    .mainSection .mainHeading p{
+        font-size: 17px;
+    }
     .authFormMain {
         margin: 20px 10px !important;
     }
